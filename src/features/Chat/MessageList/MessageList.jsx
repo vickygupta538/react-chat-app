@@ -1,7 +1,5 @@
 import React from 'react'
 import styles from './MessageList.module.scss'
-import moment from 'moment'
-import cx from 'classnames'
 import { Message } from '../Message/Message'
 
 

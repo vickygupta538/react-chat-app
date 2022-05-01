@@ -4,7 +4,7 @@ import moment from 'moment'
 
 
 export const ChatItem = (props) => {
-    const {imageURL,orderId, title, id, latestMessageTimestamp, clickHandler} = props;
+    const {imageURL,orderId, title, latestMessageTimestamp, clickHandler} = props;
      return (
         <div className={styles.chatItem} onClick={() => clickHandler(props)}>
             <div className={styles.img}>

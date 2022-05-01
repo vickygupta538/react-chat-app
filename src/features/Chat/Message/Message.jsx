@@ -26,7 +26,7 @@ const getTextMessage = (message, timestamp) => {
 
 export const Message = (props) => {
    
-    const { messageId, message, timestamp, sender, messageType = 'text', options, autoMessage } = props
+    const { message, timestamp, sender, messageType = 'text', options, autoMessage } = props
         
     
      return (

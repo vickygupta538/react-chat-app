@@ -1,15 +1,14 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './ChatDetail.module.scss'
 
 import SendIcon from '@mui/icons-material/Send';
-import { Message } from '../Message/Message';
 import moment from 'moment';
 import { MessageList } from '../MessageList/MessageList';
 
 
 const groupday = (messages) => {
     let byday={};
-    messages.map(message  => {
+    messages.forEach(message  => {
         // let d = new Date(message['timestamp']);
         // d = Math.floor(d.getTime()/(1000*60*60*24));
         let d = moment(message['timestamp']).format('DD/MM/YYYY');
@@ -23,7 +22,7 @@ const groupday = (messages) => {
 
 
 export const ChatDetail = (props) => {
-    const {imageURL,orderId, title, id, latestMessageTimestamp, clickHandler, messageList} = props;
+    const {imageURL, title, messageList} = props;
 
     const [messages, setMessages] = useState([...messageList]);
 
