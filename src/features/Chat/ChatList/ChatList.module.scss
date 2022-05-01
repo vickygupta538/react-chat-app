@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    
+    padding: 3rem;
+    max-width: 2000px;
+    max-height: 1000px;
+    // max-height : 1000px;
+    
+    
+
+    .header{
+        display: flex;
+        min-height: 100px;
+        max-height: 100px;
+        flex-direction: column;
+    }
+
+    .heading {
+        text-align: left;
+    }
+
+    .search{
+        padding: 0.5rem;
+        border: 0;
+        border-bottom: 1px solid;
+    }
+
+    .chatList {
+        flex-basis : 100% ;
+        display : flex;
+        flex-direction: column;
+        border-right: 1px solid lightgrey;
+        max-height : 100%;
+        overflow : scroll;
+    }
+
+    .withChatList {
+        flex-basis : 50% ;
+        display : flex;
+        flex-direction: column;
+        max-height : 100%;
+        overflow : scroll;
+    }
+
+    .chatDetail {
+        flex-basis : 50% ;
+        display: flex;
+        flex-direction: column;
+        max-height : 100%;
+        
+
+    }
+}
+
+

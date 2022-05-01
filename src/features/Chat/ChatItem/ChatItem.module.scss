@@ -1,0 +1,35 @@
+.chatItem{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 1rem;
+    
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .detials {
+        flex : 1;
+        margin-left: 1rem;
+
+        .header {
+            display: flex;
+            
+            .title {
+                flex-basis: 70%;
+                text-align: left;
+            }
+
+            .timestamp {
+                flex-basis: 30%;
+                text-align: right;
+            }
+        }
+
+        .orderId{
+            text-align: left;
+        }
+    }
+}
